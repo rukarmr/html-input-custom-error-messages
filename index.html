@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <br/>
+    <form>
+      <input
+        type="text"
+        pattern="^0x[a-fA-F0-9]{40}$"
+        minlength="42"
+        maxlength="42"
+        required
+        placeholder="0x"
+        oninvalid="this.setCustomValidity('ETH Address needs to consist of exactly 42 alphanumeric characters and start with 0x.')"
+      />
+      <br/>
+      <br/>
+      <input
+        type="text"
+        placeholder="participant ID"
+        minlength="2"
+        maxlength="3"
+        required
+        oninvalid="this.setCustomValidity('kdfjdwklfjwfklj')"
+      />
+      <br/>
+      <br/>
+      <button>submit</button>
+    </form>
+</html>
